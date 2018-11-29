@@ -1,0 +1,6 @@
+.modal-trigger{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    padding: 3rem;
+}
