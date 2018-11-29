@@ -1,0 +1,83 @@
+{
+  "projectName": "Pets-to-Vet",
+  "projectOwner": "Kristen Fairman",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "klfairman",
+      "name": "Kristen Fairman",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/40179134?v=4",
+      "profile": "https://github.com/klfairman",
+      "contributions": [
+        "doc",
+        "code",
+      ]
+    },
+    {
+      "login": "sbd367",
+      "name": "Spencer Berg",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/12818787?v=4",
+      "profile": "https://github.com/sbd367",
+      "contributions": [
+        "doc",
+        "code",
+      ]
+    },
+    {
+      "login": "chaseholladay",
+      "name": "Chase Holladay",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/39205866?v=4",
+      "profile": "https://www.linkedin.com/in/chaseholladay/",
+      "contributions": [
+        "doc",
+        "code",
+      ]
+    },
+    {
+      "login": "deenobahri12",
+      "name": "deenobahri12",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/41357885?v=4",
+      "profile": "https://github.com/deenobahri12",
+      "contributions": [
+        "doc",
+        "code",
+      ]
+    },
+    {
+      "login": "Yuvashkenazi",
+      "name": "Yuval Ashkenazi",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/43099258?v=4",
+      "profile": "https://github.com/Yuvashkenazi",
+      "contributions": [
+        "doc",
+        "code",
+      ]
+    },
+    {
+      "login": "seeseexiong",
+      "name": "See Xiong",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/37755774?v=4",
+      "profile": "https://github.com/seeseexiong",
+      "contributions": [
+        "doc",
+        "code",
+      ]
+    },
+    {
+      "login": "liavramirez21",
+      "name": "liavramirez21",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/40916739?v=4",
+      "profile": "https://github.com/liavramirez21",
+      "contributions": [
+        "doc",
+        "code",
+      ]
+    }
+  ]
+}
