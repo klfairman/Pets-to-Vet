@@ -11,7 +11,9 @@
     "seed": "node scripts/seedDB.js",
     "install": "cd client && yarn install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "all-contributors-cli": "^5.4.1",
     "concurrently": "^3.5.0",
     "nodemon": "^1.11.0"
   },
