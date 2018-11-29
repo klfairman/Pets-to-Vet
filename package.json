@@ -19,8 +19,17 @@
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
+  },
   "bugs": {
     "url": "https://github.com/klfairman/Pets-to-Vet/issues"
   },
-  "homepage": "https://github.com/klfairman/Pets-to-Vet#readme"
+  "homepage": "https://github.com/klfairman/Pets-to-Vet#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.14",
+    "path": "^0.12.7"
+  }
 }
