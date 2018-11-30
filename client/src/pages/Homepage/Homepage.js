@@ -18,13 +18,12 @@ class Homepage extends Component{
             <Row>
                 <Modal modalID="signup"/>
                 <ModalTrigger IDof="#signup" buttonName="Sign In"/>
-                <Col size="md6">
+                <Col size="col m6">
                     <p>this works</p>
                 </Col>
             </Row>
         </Container>
     )
-
     }
 }
 export default Homepage
