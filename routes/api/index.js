@@ -5,7 +5,7 @@ const PetRoutes = require("./PetRoute")
 
 // All routes
 router.use("/users", UserRoutes);
-router.use("/VetRoutes", VetRoutes);
-router.use("/PetRoutes", PetRoutes);
+router.use("/Vets", VetRoutes);
+router.use("/Pets", PetRoutes);
 
 module.exports = router;

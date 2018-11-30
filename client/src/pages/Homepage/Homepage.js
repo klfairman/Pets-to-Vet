@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Row, Container } from "../../components/Grid";
+import { Row, Container } from "../../components/Grid";
 import Modal from "../../components/Modal";
 import ModalTrigger from "../../components/ModalTrigger";
 import './Homepage.css'
@@ -16,11 +16,10 @@ class Homepage extends Component{
 
         <Container fluid>
             <Row>
-                <Modal modalID="signup"/>
-                <ModalTrigger IDof="#signup" buttonName="Sign In"/>
-                <Col size="col m6">
-                    <p>this works</p>
-                </Col>
+                <Modal title="Sign In" modalID="signup"/>
+                <ModalTrigger IDof="#signup" buttonName="Sign In">
+                <button>thisisabutton</button>
+                </ModalTrigger>
             </Row>
         </Container>
     )
