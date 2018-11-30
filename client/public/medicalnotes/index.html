@@ -3,327 +3,217 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>\</title>
+    <title>Pet's Note</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- Compiled and minified CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="medicalnotes.js"></script>
+    <script src="../app.js"></script>
 </head>
 <body>
-
-    <div class="basicinformation">
-        <label>Species:</label>
-        <select class="browser-default">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">Canine</option>
-          <option value="2">Feline</option>
-          
-        </select>
+  
 
 
-<label>Sex:</label>
-  <select class="browser-default">
-    <option value="" disabled selected>Choose your option</option>
-    <option value="1">Male Neutered</option>
-    <option value="2">Female Spayed</option>
-    <option value="3">Male</option>
-    <option value="3">Female</option>
-  </select>
-     
-   <label>Age:</label>
-  <select class="browser-default">
-    <option value="" disabled selected>Choose your option</option>
-    <option value="1">0-4 months</option>
-    <option value="2">4-6 months</option>
-    <option value="3">6-12 months</option>
-    <option value="3">1-3 years</option>
-    <option value="3">4-6 years</option>
-    <option value="3">6-10 years</option>
-    <option value="3">>10 years</option>
-  </select>
-
-  <label>Behavior:</label>
-  <select class="browser-default">
-    <option value="" disabled selected>Choose your option</option>
-    <option value="1">Gentle</option>
-    <option value="2">Social</option>
-    <option value="3">Fearful</option>
-    <option value="3">Possible Caution</option>
-    <option value="3">Aggressive</option>
-    <option value="3">Feral</option>
-    </select>
-   
-   
-             
+  <!-- Modal Structure -->
+  <a class="waves-effect waves-light btn modal-trigger right-align" href="#modal1">Pet's Note</a>
+  <div id="modal1" class="modal">
+    <div class="modal-content center-align">
+      <!-- CARD -->
+        <div class="basicinformation">
+            <label>Species:</label>
+            <select class="browser-default">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">Canine</option>
+              <option value="2">Feline</option>
+            </select>
+    
+            <label>Sex:</label>
+            <select class="browser-default">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">Male Neutered</option>
+              <option value="2">Female Spayed</option>
+              <option value="3">Male</option>
+              <option value="3">Female</option>
+            </select>
+         
+            <label>Age:</label>
+            <select class="browser-default">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">0-4 months</option>
+              <option value="2">4-6 months</option>
+              <option value="3">6-12 months</option>
+              <option value="3">1-3 years</option>
+              <option value="3">4-6 years</option>
+              <option value="3">6-10 years</option>
+              <option value="3">>10 years</option>
+            </select>
+    
+            <label>Behavior:</label>
+              <select class="browser-default">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Gentle</option>
+                <option value="2">Social</option>
+                <option value="3">Fearful</option>
+                <option value="3">Possible Caution</option>
+                <option value="3">Aggressive</option>
+                <option value="3">Feral</option>
+              </select>
+    
               <div class="row">
-                    <div class="input-field col s12">
-                      <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-                      <label for="textarea2">Previous Medical History:</label>
-                    </div>
-                  </div>
-                </form>
-              </div>       
-                
-Physical Examination:
-
-<div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-          <label for="textarea2">Time:</label>
-        </div>
+                <div class="input-field col s12">
+                  <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+                  <label for="textarea2">Previous Medical History:</label>
+                </div>
+              </div>
+          </div>
+    <!-- End of card -->
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Don't have an account? Sign up here.</a>
       </div>
-    </form>
+    </div>
   </div>
+  <!-- CARD OF PETS NOTE -->
+       
+                
 
+      <label>Physical Examination:</label>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+            <label for="textarea2">Time:</label>
+          </div>
+        </div>
 
-  <label>Veterinarian:</label>
-  <select class="browser-default">
-    <option value="" disabled selected>Choose your option</option>
-    <option value="1">Dr. Sarah Jones</option>
-    <option value="2">Dr. Cary Johnson</option>
-    <option value="3">Dr. Mark Smith</option>
- 
-  </select>
+      <label>Veterinarian:</label>
+      <select class="browser-default">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1">Dr. Sarah Jones</option>
+        <option value="2">Dr. Cary Johnson</option>
+        <option value="3">Dr. Mark Smith</option>
+      </select>
 
-<div class="row">
+      <div class="row">
         <div class="input-field col s12">
           <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
           <label for="textarea2">Weight:</label>
         </div>
       </div>
-    </form>
-  </div>
 
-  <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-          <label for="textarea2">Temp</label>
-        </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+        <label for="textarea2">Temp</label>
       </div>
-    </form>
-  </div>
+    </div>
 
-  <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-          <label for="textarea2">Pulse:</label>
-        </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+        <label for="textarea2">Pulse:</label>
       </div>
-    </form>
+    </div>
 
 
     <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-              <label for="textarea2">Resp:</label>
-            </div>
-          </div>
-        </form>
+      <div class="input-field col s12">
+        <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+        <label for="textarea2">Resp:</label>
       </div>
+    </div>
 
-      <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-              <label for="textarea2">MM/CRT</label>
-            </div>
-          </div>
-        </form>
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+        <label for="textarea2">MM/CRT</label>
       </div>
+    </div>
 
-      <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-              <label for="textarea2">BCS(1-10)</label>
-            </div>
-          </div>
-        </form>
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+        <label for="textarea2">BCS(1-10)</label>
       </div>
+    </div>
     
+    <label>Hydration:</label>
+    <select class="browser-default">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Adequate</option>
+      <option value="2">Marginal</option>
+      <option value="3">Inadequate</option>
+    </select>
 
+    <label>Physical Exam Notes:</label>
 
-      <label>Hydration:</label>
-      <select class="browser-default">
-        <option value="" disabled selected>Choose your option</option>
-        <option value="1">Adequate</option>
-        <option value="2">Marginal</option>
-        <option value="3">Inadequate</option>
-      </select>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-Physical Exam Notes:
-<div class="physicalexam">
-
-
-        <div class="row">
-                <div class="input-field col s12">
-                  <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-                  <label for="textarea2">GA:</label>
-                </div>
-              </div>
-            </form>
-          </div>
-
-          <div class="row">
-                <div class="input-field col s12">
-                  <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-                  <label for="textarea2">Integ:</label>
-                </div>
-              </div>
-            </form>
-          </div>
-
-
-
-  <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-              <label for="textarea2">EENT:</label>
-            </div>
-          </div>
-        </form>
-      </div>
-
-
+    <div class="physicalexam">
       <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-              <label for="textarea2">CV:</label>
-            </div>
-          </div>
-        </form>
+        <div class="input-field col s12">
+          <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+          <label for="textarea2">GA:</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+          <label for="textarea2">Integ:</label>
+        </div>
       </div>
 
       <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-              <label for="textarea2">Resp:</label>
-            </div>
-          </div>
-        </form>
+        <div class="input-field col s12">
+          <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+          <label for="textarea2">EENT:</label>
+        </div>
       </div>
-
 
       <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-              <label for="textarea2">M/S:</label>
-            </div>
-          </div>
-        </form>
+        <div class="input-field col s12">
+          <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+          <label for="textarea2">CV:</label>
+        </div>
       </div>
-
-
- <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-              <label for="textarea2">ABD/ GI:</label>
-            </div>
-          </div>
-        </form>
-      </div>
-
 
       <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-              <label for="textarea2">GU:</label>
-            </div>
-          </div>
-        </form>
+        <div class="input-field col s12">
+          <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+          <label for="textarea2">Resp:</label>
+        </div>
       </div>
+
       <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-              <label for="textarea2">PLN:</label>
-            </div>
-          </div>
-        </form>
+        <div class="input-field col s12">
+          <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+          <label for="textarea2">M/S:</label>
+        </div>
       </div>
 
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+          <label for="textarea2">ABD/ GI:</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+          <label for="textarea2">GU:</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+          <label for="textarea2">PLN:</label>
+        </div>
+      </div>
+
+    </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
 </body>
 </html>
