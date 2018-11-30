@@ -1,0 +1,33 @@
+div.petinfo {
+    float: right;
+    margin-right: 650px;
+}
+
+img {
+    height: 270px;
+    width: 250px;
+}
+
+div.shortbio{
+  
+    overflow: hidden;
+}
+
+a.notesbutton {
+    margin-left: 900px;
+    margin-top: -60px;
+}
+
+a.addpet {
+    margin-left: 483px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1.pethealth {
+margin-left: 433px;
+}
+
+i.material-icons {
+    margin-left: 483px;
+}
