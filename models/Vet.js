@@ -7,6 +7,6 @@ const vetSchema = new Schema({
     password: { type: String, required: true }
 });
 
-const Vet = mongoose.model("User", vetSchema);
+const Vet = mongoose.model("Vet", vetSchema);
 
 module.exports = Vet;

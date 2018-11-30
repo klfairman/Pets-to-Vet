@@ -14,6 +14,6 @@ const petSchema = new Schema({
     vaccines: { type: Array }
 });
 
-const Pet = mongoose.model("User", petSchema);
+const Pet = mongoose.model("Pet", petSchema);
 
 module.exports = Pet;
