@@ -1,6 +1,27 @@
-.modal-trigger{
+#signin{
     position: absolute;
-    top: 50vh;
-    left: 50vw;
+    top: 60vh;
+    left: 55vw;
     padding: 3rem;
+    border-radius: 5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0;
+}
+.parallax-container{
+    height: 101vh;
+}
+#header{
+    position: fixed;
+    left: 36vw;
+    padding: 10px;
+    font-size: 5rem;
+    text-align: center;
+    border-radius: 5rem;
+    border-style: solid;
+    width: 30vw;
+    color: orange;
+}
+#submit{
+    margin-bottom: 3vh;
 }
