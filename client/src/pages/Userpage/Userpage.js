@@ -5,7 +5,7 @@ import { Row, Container } from "../../components/Grid";
 class Userpage extends Component{
 
     state ={
-        Petinfo = []
+        Petinfo: []
     };
 
     render() {
@@ -14,7 +14,7 @@ class Userpage extends Component{
 
         <Container fluid>
             <Row>
-                
+                <p>this is the userpage</p>
             </Row>
         </Container>
     )
