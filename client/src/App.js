@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React from "react";
-import Homepage from "./pages/Homepage"
+import Homepage from "./pages/Homepage";
+import Userpage from "./pages/Userpage";
 
 
 const App = () => (
@@ -8,6 +9,7 @@ const App = () => (
     <div>
       <Switch>
         <Route exact path="/" component={Homepage} />
+        <Route exact path="/userpage" component={Userpage}/>
       </Switch>
     </div>
   </Router>
