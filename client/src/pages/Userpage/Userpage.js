@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Row, Container } from "../../components/Grid";
+import ModalTrigger from "../../components/ModalTrigger";
+import API from "../../utils/API";
+
 
 
 class Userpage extends Component{
@@ -8,13 +11,22 @@ class Userpage extends Component{
         Petinfo: []
     };
 
+    componentDidMount(){
+        this.loadPets();
+    }
+
+    loadPets = () =>{
+        API.getPets()
+        .then(res => this.setState({Petinfo: res.data}))
+    }
+
     render() {
     
     return(
 
         <Container fluid>
             <Row>
-                <p>this is the userpage</p>
+                <ModalTrigger/>
             </Row>
         </Container>
     )

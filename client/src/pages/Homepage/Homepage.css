@@ -23,5 +23,8 @@
     color: orange;
 }
 #submit{
-    margin-bottom: 3vh;
+    margin-bottom: 4vh;
+}
+#close{
+    float: right;
 }
