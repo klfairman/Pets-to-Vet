@@ -29,6 +29,7 @@
   "homepage": "https://github.com/klfairman/Pets-to-Vet#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.3.14",
     "path": "^0.12.7"
   }
