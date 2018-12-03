@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import '../../pages/Homepage/Homepage.css';
 import Input from "../Input";
 import ModalTrigger from "../ModalTrigger";
+import API from "../../utils/API";
 
 class NewPetForm extends Component{
 
@@ -28,6 +29,16 @@ class NewPetForm extends Component{
     //     API.getUser
     // }
 
+    handleNewPet = () =>{
+        API.addPet({
+            name: this.state.name,
+            dob: this.state.dob,
+            age: this.state.age,
+            type: this.state.type,
+            breed: this.state.breed
+        }).then(res => console.log(res))
+        .catch(err => console.log(err));
+    }
     handleInputChange = event =>{
         const { name, value } = event.target;
         this.setState({
@@ -59,9 +70,9 @@ class NewPetForm extends Component{
             </div>
             <div className="col m6">
                 <Input change={this.handleInputChange} inputTitle="Vaccines" value={this.state.vaccines} name="vaccines"/>
-                <Input change={this.handleInputChange} inputTitle="Type: Vet or Owner" value={this.state.type} name="type"/>
+                <Input change={this.handleInputChange} inputTitle="Type" value={this.state.type} name="type"/>
             </div>
-            <ModalTrigger ID="submit" IDof="/userpage" buttonName="Submit"/>
+            <ModalTrigger click={this.handleNewPet} ID="submit" IDof="/userpage" buttonName="Submit"/>
         </form>
 
     )

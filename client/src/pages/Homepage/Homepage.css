@@ -11,6 +11,17 @@
 .parallax-container{
     height: 101vh;
 }
+#petModal{
+    position: relative;
+    top: 5rem;
+    text-align: center;
+}
+#newPet{
+    position: relative;
+    top: 5rem;
+    left: 45vw;
+    text-align: center;
+}
 #header{
     position: fixed;
     left: 36vw;
