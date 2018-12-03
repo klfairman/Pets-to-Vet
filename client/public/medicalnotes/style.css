@@ -65,7 +65,51 @@ h2.enter {
  font-size: 12px;
 }
 
-div.row {
-   
+div.card.medium {
+    background-color: #97c6f4;
+}
+div.collapsible-header {
+    background-color: #97c6f4;
+    font-weight: bold;
     color: white;
 }
+
+div.collapsible-body {
+    background-color: #97c6f4;
+}
+
+
+
+div.card.small {
+
+    background-color: #97c6f4;
+}
+
+h1.pethealth {
+    color: #ffffff;
+
+    font-family: 'Fredoka One', cursive;
+    text-shadow: horizontal-offset vertical-offset blur color;
+
+
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+a.addpet.waves-effect.waves-light.btn-large {
+    background-color: #8abf56;
+}
+a.addpet.waves-effect.waves-light.btn-large:hover {
+    background-color: #617e45;
+}
+
+a.notesbutton.waves-effect.waves-light.btn {
+    background-color: #8abf56;
+}
+a.notesbutton.waves-effect.waves-light.btn:hover {
+    background-color: #617e45;
+}
+
+div.petinfo {
+    font-weight: bold;
+}
+
