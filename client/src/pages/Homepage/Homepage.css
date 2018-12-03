@@ -16,6 +16,12 @@
     top: 5rem;
     text-align: center;
 }
+#aPet{
+    line-height: 0;
+    margin-bottom: 1vh;
+    width: 30vw;
+    padding: 20px;
+}
 #newPet{
     position: relative;
     top: 5rem;
