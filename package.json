@@ -11,7 +11,9 @@
     "seed": "node scripts/seedDB.js",
     "install": "cd client && yarn install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^3.5.0",
+    "all-contributors-cli": "^5.4.1",
+    "concurrently": "^4.1.0",
     "nodemon": "^1.11.0"
   },
   "bugs": {
@@ -28,9 +31,11 @@
   },
   "homepage": "https://github.com/klfairman/Pets-to-Vet#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.16.4",
     "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.3.14",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react-geolocated": "^2.4.0"
   }
 }
