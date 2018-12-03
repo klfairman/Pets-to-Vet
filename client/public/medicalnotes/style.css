@@ -36,3 +36,36 @@ i.material-icons {
 a.addmedrec {
     margin-left: 820px;
 }
+
+
+
+h1.titleaddpet {
+    color: #ffffff;
+
+    font-family: 'Fredoka One', cursive;
+    text-shadow: horizontal-offset vertical-offset blur color;
+
+
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+div.card-panel {
+  background-color: #97c6f4;
+}
+
+div.btn {
+    background-color: #8abf56;
+}
+
+div.btn:hover {
+    background-color: #617e45;
+}
+h2.enter {
+ color: white;
+ font-size: 12px;
+}
+
+div.row {
+   
+    color: white;
+}
