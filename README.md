@@ -1,4 +1,20 @@
 # Pets-to-Vet
+
+## Concept
+
+
+## How to Deploy
+
+
+## Description of Architechture
+
+
+## Technology Used
+
+
+
+
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors)
 ## Contributors
 
@@ -11,3 +27,10 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
+
+
+## Wireframes and Models
+
+<img src="" href="#" alt="" />
+<img src="" href="#" alt="" />
+<img src="" href="#" alt="" />
