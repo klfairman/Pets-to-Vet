@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import '../../pages/Homepage/Homepage.css';
 import Input from "../Input";
 import ModalTrigger from "../ModalTrigger";
+import API from "../../utils/API";
 
 class NewPetForm extends Component{
 
     state ={
+        currentUser: [],
         Owner: "",
         name: "",
         dob: "",
@@ -18,6 +20,25 @@ class NewPetForm extends Component{
         vaccines: []
     };
 
+    componentDidMount = () =>{
+        // this.loadUser()
+    }
+
+    // Need a way to get current user ID
+    // loadUser = event =>{
+    //     API.getUser
+    // }
+
+    handleNewPet = () =>{
+        API.addPet({
+            name: this.state.name,
+            dob: this.state.dob,
+            age: this.state.age,
+            type: this.state.type,
+            breed: this.state.breed
+        }).then(res => console.log(res))
+        .catch(err => console.log(err));
+    }
     handleInputChange = event =>{
         const { name, value } = event.target;
         this.setState({
@@ -40,18 +61,18 @@ class NewPetForm extends Component{
                 <Input change={this.handleInputChange} inputTitle="Date Of Birth" value={this.state.dob} name="dob"/>
             </div>
             <div className="col m6">
-                <Input change={this.handleInputChange} inputTitle="age" value={this.state.age} name="age"/>
-                <Input change={this.handleInputChange} inputTitle="breed" value={this.state.breed} name="breed"/>
+                <Input change={this.handleInputChange} inputTitle="Age" value={this.state.age} name="age"/>
+                <Input change={this.handleInputChange} inputTitle="Breed" value={this.state.breed} name="breed"/>
             </div>
             <div className="col m6">
-                <Input change={this.handleInputChange} inputTitle="food" value={this.state.food} name="food"/>
-                <Input change={this.handleInputChange} inputTitle="gender" value={this.state.gender} name="gender"/>
+                <Input change={this.handleInputChange} inputTitle="Food" value={this.state.food} name="food"/>
+                <Input change={this.handleInputChange} inputTitle="Gender" value={this.state.gender} name="gender"/>
             </div>
             <div className="col m6">
-                <Input change={this.handleInputChange} inputTitle="vaccines" value={this.state.vaccines} name="vaccines"/>
-                <Input change={this.handleInputChange} inputTitle="type" value={this.state.type} name="type"/>
+                <Input change={this.handleInputChange} inputTitle="Vaccines" value={this.state.vaccines} name="vaccines"/>
+                <Input change={this.handleInputChange} inputTitle="Type" value={this.state.type} name="type"/>
             </div>
-            <ModalTrigger ID="submit" IDof="/userpage" buttonName="Submit"/>
+            <ModalTrigger click={this.handleNewPet} ID="submit" IDof="/userpage" buttonName="Submit"/>
         </form>
 
     )
