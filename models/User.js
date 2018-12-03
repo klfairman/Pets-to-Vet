@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
   email: { type: String, required: true },
   username: { type: String, required: true },
-  type: { type: String, required: true },
+  isVet: { type: Boolean, required: true },
   password: { type: String, required: true }
 });
 

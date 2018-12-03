@@ -30,8 +30,8 @@ class LoginForm extends Component{
     return(
 
         <form id="login">
-            <Input change={this.handleInputChange} inputTitle="username" value={this.state.username} name="username"/>
-            <Input change={this.handleInputChange} inputTitle="password" value={this.state.password} name="password"/>
+            <Input change={this.handleInputChange} inputTitle="Username" value={this.state.username} name="username"/>
+            <Input change={this.handleInputChange} inputTitle="Password" value={this.state.password} name="password"/>
             <ModalTrigger ID="submit" IDof="/userpage" buttonName="Submit"/>
         </form>
 
