@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import '../../pages/Homepage/Homepage.css';
 import Input from "../Input";
 import ModalTrigger from "../ModalTrigger";
+import API from "../../utils/API";
 
 class LoginForm extends Component{
 
     state ={
-        username: [],
+        username: "",
         password: "",
         email: "",
         type: ""
@@ -24,6 +25,17 @@ class LoginForm extends Component{
     // handleSubmit = event =>{
         
     // }
+
+    handleFormSubmit = () =>{
+
+        API.addUser({
+            username: this.state.username,
+            email: this.state.email,
+            password: this.state.password,
+            type: this.state.type
+        }).then(res => res)
+        .catch(err => err)
+    }
 
     render() {
     

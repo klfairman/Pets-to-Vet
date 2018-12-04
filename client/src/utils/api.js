@@ -20,5 +20,8 @@ export default {
   // Saves a pet to the database
   addPet: function(petData) {
     return axios.post("/api/Pets", petData);
+  },
+  addUser: function(userData) {
+    return axios.post("/api/User", userData)
   }
 };

@@ -11,7 +11,8 @@ const petSchema = new Schema({
     gender: { type: String },
     food: { type: String },
     otherAnimals: { type: Array },
-    vaccines: { type: Array }
+    vaccines: { type: Array },
+    notes: { type: Array }
 });
 
 const Pet = mongoose.model("Pet", petSchema);

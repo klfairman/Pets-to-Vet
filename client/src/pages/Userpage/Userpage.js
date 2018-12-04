@@ -39,7 +39,7 @@ class Userpage extends Component{
                         <div id="petModal">
                             <ModalTrigger buttonName={pets.name} ID="aPet" IDof={"#"+pets._id}/>
                             <Modal title={pets.name} modalID={pets._id}>
-                                <ul>
+                                <ul key={pets._id}>
                                     <li>{"age: "+pets.age}</li>
                                     <li>{"DOB: "+pets.dob}</li>
                                     <li>{"Type: "+pets.type}</li>

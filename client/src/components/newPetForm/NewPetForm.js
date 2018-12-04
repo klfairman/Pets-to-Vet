@@ -17,7 +17,8 @@ class NewPetForm extends Component{
         gender: "",
         food: "",
         otherAnimals: [],
-        vaccines: []
+        vaccines: [],
+        notes: []
     };
 
     componentDidMount = () =>{
@@ -31,14 +32,21 @@ class NewPetForm extends Component{
 
     handleNewPet = () =>{
         API.addPet({
+
             name: this.state.name,
             dob: this.state.dob,
             age: this.state.age,
             type: this.state.type,
-            breed: this.state.breed
+            breed: this.state.breed,
+            food: this.state.food,
+            gender: this.state.food,
+            vaccines: this.state.vaccines,
+            notes: this.state.notes
+
         }).then(res => console.log(res))
         .catch(err => console.log(err));
     }
+
     handleInputChange = event =>{
         const { name, value } = event.target;
         this.setState({
@@ -71,6 +79,9 @@ class NewPetForm extends Component{
             <div className="col m6">
                 <Input change={this.handleInputChange} inputTitle="Vaccines" value={this.state.vaccines} name="vaccines"/>
                 <Input change={this.handleInputChange} inputTitle="Type" value={this.state.type} name="type"/>
+            </div>
+            <div className="col m12">
+                <Input change={this.handleInputChange} inputTitle="Additional Notes" value={this.state.notes} name="notes"/>
             </div>
             <ModalTrigger click={this.handleNewPet} ID="submit" IDof="/userpage" buttonName="Submit"/>
         </form>
