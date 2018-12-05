@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import { Row, Container } from "../../components/Grid";
-import ModalTrigger from "../../components/ModalTrigger";
+// import ModalTrigger from "../../components/ModalTrigger";
 import API from "../../utils/API";
 import NewPetForm from "../../components/newPetForm";
-import Modal from "../../components/Modal";
-import Nav from "../../components/Nav";
+// import Modal from "../../components/Modal";
+import {Modal, Button} from 'react-materialize'
+
+// import Nav from "../../components/Nav";
 
 class Userpage extends Component{
 
@@ -32,49 +34,44 @@ class Userpage extends Component{
     return(
 
         <Container fluid>
-
-  <nav>
-    <div class="nav-wrapper #1a237e indigo darken-4">
-      <a href="#" class="brand-logo">Pets-to-Vets</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Home</a></li>
-        <li><a href="collapsible.html">Patient Card</a></li>
-        <li><a href="collapsible.html">User Page</a></li>
-      </ul>
-    </div>
-  </nav>
-        
-
-
-
-
-
-            <Row>
+            
                 {
-                    this.state.Petinfo.map(pets =>(
+                    this.state.Petinfo.concat('Add a Pet').map(pet =>(
+                    typeof pet == 'string' ? <div id="petModal"><Modal trigger={<Button>{pet}</Button>}>
+                    <NewPetForm></NewPetForm>
+                    </Modal></div>:
                         <div id="petModal">
-                            <ModalTrigger buttonName={pets.name} ID="aPet" IDof={"#"+pets._id}/>
-                            <Modal title={pets.name} modalID={pets._id}>
+                            {/* <ModalTrigger buttonName={pets.name} ID="aPet" IDof={"#"+pets._id}/> */}
+                            {/* <Modal title={pets.name} trigger={<Button>{pet.name}</Button>} modalID={pets._id}> */}
+                            <Modal trigger={<Button>{pet.name}</Button>} >
+                                
+                                <code>{JSON.stringify(pet)}</code>
                                 <ul>
-                                    <li>{"age: "+pets.age}</li>
-                                    <li>{"DOB: "+pets.dob}</li>
-                                    <li>{"Type: "+pets.type}</li>
-                                    <li>{"Breed: "+pets.breed}</li>
-                                    <li>{"Gender: "+pets.gender}</li>
-                                    <li>{"Food: "+pets.food}</li>
-                                    <li>{"Vaccines: "+pets.vaccines}</li>
+                                    {['age', 'dob', 'type', 'breed', 'gender','food', 'vaccines']
+                                    .filter(key => pet[key] && pet[key].length > 0)
+                                    .map(key => key === 'dob' ? 'DOB' : key.slice(0, 1).toUpperCase() + key.slice(1))
+                                    .map(key => <Row><li>{key + ': ' + pet[key.toLowerCase()]}</li>   </Row>)}
+                                    {/*<li>{"Age: "+pet.age}</li>
+                                    <li>{"DOB: "+pet.dob}</li>
+                                    <li>{"Type: "+pet.type}</li>
+                                    <li>{"Breed: "+pet.breed}</li>
+                                    <li>{"Gender: "+pet.gender}</li>
+                                    <li>{"Food: "+pet.food}</li>
+                    <li>{"Vaccines: "+pet.vaccines}</li>*/}
                                 </ul>
+                             
                             </Modal>
+                         
                         </div>
                     ))
                 }
-                <ModalTrigger ID="newPet" IDof="#newPetForm" buttonName="Add a Pet"/>
-            </Row>
+                {/* <ModalTrigger ID="newPet" IDof="#newPetForm" buttonName="Add a Pet"/> */}
+
+        
 
             <Row>
-                <Modal title="Add a pet" modalID="newPetForm">
-                    <NewPetForm/>
-                </Modal>
+                {/* <Modal title="Add a pet" modalID="newPetForm"> */}
+             
             </Row>
         </Container>
     )
