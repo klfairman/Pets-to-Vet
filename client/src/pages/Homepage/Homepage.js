@@ -6,6 +6,7 @@ import './Homepage.css'
 import doggo from "../../Images/bubbles_doggo.jpg";
 import SignUpForm from "../../components/signUpForm";
 import LoginForm from "../../components/loginForm";
+import {Parallax} from "react-materialize";
 
 class Homepage extends Component{
 
@@ -27,13 +28,14 @@ class Homepage extends Component{
     render() {
     
     return(
-
+        <div>
+        <Parallax imageSrc={doggo} />
         <Container fluid>
             <Row>
-            <div className="parallax-container">
+            {/* <div className="parallax-container">
                 <h1 id="header">Pets-To-Vets</h1>
                 <div className="parallax"><img alt="doggo" src={doggo}></img></div>
-            </div>
+            </div> */}
                 <Modal title="Sign In" modalID="signinModal">
                     <LoginForm />
                     <p>don't have an account?</p><ModalTrigger ID="signup" IDof="#signupModal" buttonName="click here"/>
@@ -48,6 +50,7 @@ class Homepage extends Component{
                 </Modal>
             </Row>
         </Container>
+        </div>
     )
     }
 }
