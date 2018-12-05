@@ -23,7 +23,7 @@
   "license": "ISC",
   "devDependencies": {
     "all-contributors-cli": "^5.4.1",
-    "concurrently": "^3.5.0",
+    "concurrently": "^4.1.0",
     "nodemon": "^1.11.0"
   },
   "bugs": {
@@ -31,8 +31,12 @@
   },
   "homepage": "https://github.com/klfairman/Pets-to-Vet#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.16.4",
+    "if-env": "^1.0.4",
+    "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.3.14",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react-geolocated": "^2.4.0"
   }
 }

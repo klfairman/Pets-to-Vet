@@ -1,0 +1,115 @@
+div.petinfo {
+    float: right;
+    margin-right: 650px;
+}
+
+img {
+    height: 270px;
+    width: 250px;
+}
+
+div.shortbio{
+  
+    overflow: hidden;
+}
+
+a.notesbutton {
+    margin-left: 900px;
+    margin-top: -60px;
+}
+
+a.addpet {
+    margin-left: 483px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1.pethealth {
+margin-left: 433px;
+}
+
+i.material-icons {
+    margin-left: 483px;
+}
+
+
+a.addmedrec {
+    margin-left: 820px;
+}
+
+
+
+h1.titleaddpet {
+    color: #ffffff;
+
+    font-family: 'Fredoka One', cursive;
+    text-shadow: horizontal-offset vertical-offset blur color;
+
+
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+div.card-panel {
+  background-color: #97c6f4;
+}
+
+div.btn {
+    background-color: #8abf56;
+}
+
+div.btn:hover {
+    background-color: #617e45;
+}
+h2.enter {
+ color: white;
+ font-size: 12px;
+}
+
+div.card.medium {
+    background-color: #97c6f4;
+}
+div.collapsible-header {
+    background-color: #97c6f4;
+    font-weight: bold;
+    color: white;
+}
+
+div.collapsible-body {
+    background-color: #97c6f4;
+}
+
+
+
+div.card.small {
+
+    background-color: #97c6f4;
+}
+
+h1.pethealth {
+    color: #ffffff;
+
+    font-family: 'Fredoka One', cursive;
+    text-shadow: horizontal-offset vertical-offset blur color;
+
+
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+a.addpet.waves-effect.waves-light.btn-large {
+    background-color: #8abf56;
+}
+a.addpet.waves-effect.waves-light.btn-large:hover {
+    background-color: #617e45;
+}
+
+a.notesbutton.waves-effect.waves-light.btn {
+    background-color: #8abf56;
+}
+a.notesbutton.waves-effect.waves-light.btn:hover {
+    background-color: #617e45;
+}
+
+div.petinfo {
+    font-weight: bold;
+}
+
