@@ -4,8 +4,7 @@ import ModalTrigger from "../../components/ModalTrigger";
 import API from "../../utils/API";
 import NewPetForm from "../../components/newPetForm";
 import Modal from "../../components/Modal";
-
-
+import Nav from "../../components/Nav";
 
 class Userpage extends Component{
 
@@ -33,6 +32,23 @@ class Userpage extends Component{
     return(
 
         <Container fluid>
+
+  <nav>
+    <div class="nav-wrapper #1a237e indigo darken-4">
+      <a href="#" class="brand-logo">Pets-to-Vets</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="collapsible.html">Patient Card</a></li>
+        <li><a href="collapsible.html">User Page</a></li>
+      </ul>
+    </div>
+  </nav>
+        
+
+
+
+
+
             <Row>
                 {
                     this.state.Petinfo.map(pets =>(
