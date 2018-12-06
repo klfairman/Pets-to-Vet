@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import { Row, Container } from "../../components/Grid";
 // import ModalTrigger from "../../components/ModalTrigger";
-import API from "../../utils/API";
+import API from "../../utils/api";
 import NewPetForm from "../../components/newPetForm";
 // import Modal from "../../components/Modal";
 import {Modal, Button} from 'react-materialize'
+import medicalNotesDisplay from '../../components/MedicalNotesDisplay';
+import MedicalNotesForm from "../../components/medicalNotesForm";
+import MedicalNotesDisplay from "../../components/MedicalNotesDisplay";
 
 // import Nav from "../../components/Nav";
 
@@ -57,9 +60,18 @@ class Userpage extends Component{
                                     <li>{"Breed: "+pet.breed}</li>
                                     <li>{"Gender: "+pet.gender}</li>
                                     <li>{"Food: "+pet.food}</li>
-                    <li>{"Vaccines: "+pet.vaccines}</li>*/}
+                                    <li>{"Vaccines: "+pet.vaccines}</li>*/
+                                    }
+                                    
+                                    <Modal trigger={<Button>Display Notes</Button>}>
+                                        {/* ====== display medical notes here ========== */}
+                                            {/* inside of dislplay medical notes, create input modal */}
+                                            <MedicalNotesDisplay></MedicalNotesDisplay>
+                                                <Modal trigger={<Button>Edit Notes</Button>}>
+                                                <MedicalNotesForm></MedicalNotesForm>
+                                                </Modal>
+                                    </Modal>
                                 </ul>
-                             
                             </Modal>
                          
                         </div>
