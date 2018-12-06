@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import '../../pages/Homepage/Homepage.css';
 import Input from "../Input";
 import ModalTrigger from "../ModalTrigger";
-import API from "../../utils/API";
+import API from "../../utils/api";
 
 class NewPetForm extends Component{
 
